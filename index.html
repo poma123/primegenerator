@@ -2,13 +2,13 @@
 <html>
 <body>
 <link rel="stylesheet" type="text/css" href="style.css">
-<h2>Mit tud ez az oldal?</h2>
+<h2>What can I do on this page?</h2>
 
-<p>Prímszámokat listázni a megadott paraméterek alapján.</p>
+<p>Here you can generate prime numbers.</p>
 
 <br>
-Első szám: <input id="t1" type="text" name="1" value="1"><br>
-Második szám: <input id="t2" type="text1" name="2" value="100"><br>
+From: <input id="t1" type="text" name="1" value="1"><br>
+To: <input id="t2" type="text1" name="2" value="100"><br>
 <br>
 
 <script>
@@ -33,11 +33,16 @@ Második szám: <input id="t2" type="text1" name="2" value="100"><br>
 	  }
       if (prim == 1) {
 	    text += a+"<br>";
-        <!-- System.out.println(a); -->
 		count = count + 1;
 	  }
 	}
-	    text += "Összesen " + count + " darab prímszámot generáltál.<br>";
+	  
+	  var s = "";
+	  if (count == 1) {
+	     s = "s";	  
+	  }
+	  
+	    text += "Successfully generated " + count + " prime number"+s+".<br>";
 		document.getElementById('ppp').innerHTML = text;
 
 	
@@ -50,7 +55,7 @@ Második szám: <input id="t2" type="text1" name="2" value="100"><br>
   }
   
 </script>
-<button id="button" type="button" onclick="count()">Számolás</button>
+<button id="button" type="button" onclick="count()">Generate</button>
 <button type="button" onclick="clearj()">Clear</button>
 
 <div class="nagy">
