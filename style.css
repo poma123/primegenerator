@@ -56,9 +56,12 @@ div.nagy2 {
 
 
 .bg-true {
+    color: white;
     background-color: #55cd32 !important
 }
 
 .bg-false {
+    color: white;
     background-color: #dd4b39 !important
+	  
 }
