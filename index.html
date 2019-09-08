@@ -32,7 +32,11 @@ To: <input id="t2" type="text1" name="2" value="100"><br>
 
 	  }
       if (prim == 1) {
-	    text += a+"<br>";
+	      var br = ""
+	      if (count > 0) {
+		      br = "<br>";
+	      }
+	    text += br+a;
 		count = count + 1;
 	  }
 	}
