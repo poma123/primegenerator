@@ -31,7 +31,6 @@ div.nagy2 {
   vertical-align: baseline;
   border-radius: .25em;
   display:none;
-  width: 30px;
   // Add hover effects, but only for links
   a& {
     &:hover,
