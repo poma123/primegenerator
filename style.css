@@ -9,6 +9,13 @@ p.primek {
 }
 
 
+p.output {
+	
+	background-color:blue;
+	color:white;
+}
+
+
 div.nagy {
 width:700px;height:600px;
 }
