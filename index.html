@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<body>
+<link rel="stylesheet" type="text/css" href="style.css">
+<h2>Mit tud ez az oldal?</h2>
+
+<p>Prímszámokat listázni a megadott paraméterek alapján.</p>
+
+
+
+<!-- <button type="button" onmouseover="document.getElementById('cső').style.display='block'" onmouseout="document.getElementById('cső').style.display='none'">Keep your mouse on me or don't!</button> -->
+
+
+
+
+
+<!-- <p id="cső" style="display:none;font-size:50px;color:Green;bold:true;">CSŐ!</p> -->
+
+
+
+<br>
+Első szám: <input id="t1" type="text" name="1" value="1"><br>
+Második szám: <input id="t2" type="text1" name="2" value="100"><br>
+<br>
+
+
+<script>
+
+
+
+  function count() {
+    document.getElementById('szoveg').style.display='block'
+    var szam1 = document.getElementById('t1').value;
+    var szam2 = document.getElementById('t2').value;
+	
+	
+
+	var text = "";
+	var prim;
+    var count = 0;
+	for (a = parseInt(szam1); a < parseInt(szam2); a++) {
+	  prim = 1;
+      for (b = 2; b < 101; b++) {
+        if (b != a && a % b == 0) {
+        prim = 0;
+        }
+
+	  }
+      if (prim == 1) {
+	    text += a+"<br>";
+        <!-- System.out.println(a); -->
+		count = count + 1;
+	  }
+	}
+		
+	
+	  
+	  
+	  
+    
+	    text += "Összesen " + count + " darab prímszámot generáltál.<br>";
+		document.getElementById('ppp').innerHTML = text;
+	
+	
+
+		<!-- BufferedReader key = new BufferedReader(new InputStreamReader(System.in)); -->
+		<!-- System.out.println("Minimum érték: "); -->
+		<!-- int i = Integer.parseInt(key.readLine()); -->
+		<!-- System.out.println("Maximum érték: "); -->
+		<!-- int i1 = Integer.parseInt(key.readLine()); -->
+
+		<!-- int prim; -->
+		<!-- int count = 0; -->
+		<!-- for (int a = i; a < i1; a++) { -->
+			<!-- prim = 1; -->
+			<!-- for (int b = 2; b < 101; b++) { -->
+				<!-- if (b != a && Math.floorMod(a, b) == 0) { -->
+					<!-- prim = 0; -->
+
+				<!-- } -->
+
+			<!-- } -->
+			<!-- if (prim == 1) { -->
+				<!-- System.out.println(a); -->
+				<!-- count = count + 1; -->
+
+			<!-- } -->
+		<!-- } -->
+		
+		<!-- System.out.println("\nPrímszámok sikeresen legenerálva!\nÖsszesen " + count + " szám!"); -->
+
+	
+
+  }
+  
+  function clearj() {
+	document.getElementById('szoveg').style.display='none'
+	document.getElementById('ppp').innerHTML = "";
+  }
+  
+</script>
+<button id="button" type="button" onclick="count()">Számolás</button>
+<button type="button" onclick="clearj()">Clear</button>
+
+<div class="nagy">
+<div id="szoveg" style="width:200px;height:400px;display:none; overflow-y: scroll; height:400px;">
+<p id ="ppp" class="primek"></p>
+</div>
+
+</body>
+</html> 
+
+
+
