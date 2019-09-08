@@ -8,6 +8,11 @@ p.primek {
 	color:white;
 }
 
+p.output {
+  color:white;
+  background-color:blue;
+}
+
 
 div.nagy {
 	position: fixed;top: 20px;left: 20px;
