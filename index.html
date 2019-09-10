@@ -14,9 +14,10 @@
 <p>Here you can generate prime numbers.</p>
 
 <br>
-    <div style="position:fixed; left:10px; width: 100px; height: 60px;">
-      From:<br>
-      To: </div>
+    <div style="position:fixed; left:17px; width: 100px; height: 60px;">
+	    <p style="display: inline; line-height: 1.33">
+		    From:<br>
+		    To:</p></div>
         <div style="position:fixed; left: 80px; height: 60px">
           <input id="t1" type="number" name="1" value="1" style="width: 60px"><br>
           <input id="t2" type="number" name="2" value="100" style="width: 60px">
@@ -68,7 +69,7 @@
 <button id="button" type="button" onclick="count()">Generate</button>
 <button type="button" onclick="clearj()">Clear</button>
 
-   <div id="szoveg" style="width:200px;height:400px;display:none; overflow-y: scroll; height:400px;">
+   <div id="szoveg" style="style="position: relative; top: 15px; width: 200px; display: block; overflow-y: scroll; height: 400px;">
       <p id ="ppp" class="primek"></p>
       <p id ="pp2" class="output"></p>
   </div>
