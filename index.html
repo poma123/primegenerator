@@ -100,15 +100,18 @@ Is <input id="pr" type="number" name="1" value="1" style="width:40px" type="numb
     var count = 0;
 	var a = parseInt(szam1);
 
+	  
+    if (data === parseInt(data, 10)) {
+       
+    
     if (a > 1) {
 	  prim = 1;
       for (b = 2; b < 101; b++) {
         if (b != a && a % b == 0) {
         prim = 0;
         }
-
-	  }
-
+      }
+    }
     }
       if (prim == 1) {
 	  document.getElementById("label1").innerHTML = "Yes, it is.";
