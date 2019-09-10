@@ -89,7 +89,10 @@ Is <input id="pr" type="number" name="1" value="1" style="width:40px" type="numb
 
 <script>
 
-
+function isInt(value) {
+  var x;
+  return isNaN(value) ? !1 : (x = parseFloat(value), (0 | x) === x);
+}
 
   function isPrime() {
     var szam1 = document.getElementById('pr').value;
@@ -101,7 +104,7 @@ Is <input id="pr" type="number" name="1" value="1" style="width:40px" type="numb
 	var a = parseInt(szam1);
 
 	  
-    if (szam1 === parseInt(szam1, 10)) {
+    if (isInt(szam1)) {
        
     
     if (a > 1) {
